@@ -15,7 +15,12 @@ breakDownObj(object2); // => [ 'location', 'borough', 'NY', 'Brooklyn' ]
 ***********************************************************************/
 
 function breakDownObj(obj) {
-  // Your code here
+  // Get all keys from the object
+  const keys = Object.keys(obj);
+  // Get all values from the object
+  const values = Object.values(obj);
+  // Combine keys and values into a single array using spread syntax
+  return [...keys, ...values];
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
